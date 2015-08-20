@@ -46,10 +46,14 @@ h1 {
 }
 
 .navbar-nav > li > a {
-	text-transform:uppercase /* FONTCASE1 */;
-	color:|COLOR1| /* COLOR1 */;
+	text-transform:none /* FONTCASE1 */;
+	color:|COLOR2| /* COLOR2 */;
 	font-weight:|FONTWEIGHT1| /* FONTWEIGHT1 */;	
 	font-size:1em /*FONTSIZE3*/;	
+}
+
+.navbar-nav.navbar-right > li > a {
+	color:|COLOR1| /* COLOR1 */;
 }
 
 /* Input Fields */
@@ -76,16 +80,25 @@ input.form-control, #srch-zip {
 #featured .panel-heading,
 #top_retailers .panel-heading {
 	padding-left:|INDENT| /* INDENT */;	
-	background-color:FFF#;
+	background-color:#FFF;
 	font-weight:|FONTWEIGHT2| /* FONTWEIGHT2 */;
-	border-color:|COLOR4| /* COLOR4 */;
+	border-color:|COLOR5| /* COLOR5 */;
 }
 #offer_table thead>tr>th, .panel-default>.panel-heading,
 #top_retailers thead>tr>th, .panel-default>.panel-heading {
 	border-width:|BORDERWIDTH2| /* BORDERWIDTH2 */;	
 }
 
+#featured .panel-heading h5,
+#top_retailers .panel-heading h5 {
+	color:|COLOR2| /* COLOR2 */;	
+}
+
 /* Left Nav */
+
+#side_nav h5 {
+	color:|COLOR2| /* COLOR2 */;	
+}
 
 #side_nav .panel-body .nav>li>a {
 	
@@ -180,7 +193,7 @@ ul.retailers_list li a  {
 }
 
 #offer_table td a, #offer_table th a {
-	color:|COLOR4| /* COLOR2 */;
+	color:|COLOR2| /* COLOR2 */;
 	font-weight:|FONTWEIGHT2| /* FONTWEIGHT2 */;	
 }
 
