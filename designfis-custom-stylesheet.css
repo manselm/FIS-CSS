@@ -33,7 +33,7 @@ h1 {
 	font-size:|FONTSIZE2| /*FONTSIZE2*/;	
 }
 
-* a, a:hover, a:focus {
+* a, a:hover, a:focus, .btn-link {
 	color:|COLOR1| /* COLOR1 */;
 }
 
@@ -43,6 +43,11 @@ h1 {
 	background-color:|COLOR1| /* COLOR1 */;		
 	border-color:|COLOR1| /* COLOR1 */;
 	color:|COLOR7| /* COLOR7 */;
+}
+
+
+.see_details_text span.glyphicon {
+	display:|OFFERARROW| /* OFFERARROW */;	
 }
 
 .navbar-nav > li > a {
@@ -82,7 +87,7 @@ input.form-control, #srch-zip {
 	padding-left:|INDENT| /* INDENT */;	
 	background-color:#FFF;
 	font-weight:|FONTWEIGHT2| /* FONTWEIGHT2 */;
-	border-color:|COLOR5| /* COLOR5 */;
+	border-color:#dddddd;
 }
 #offer_table thead>tr>th, .panel-default>.panel-heading,
 #top_retailers thead>tr>th, .panel-default>.panel-heading {
@@ -108,7 +113,7 @@ input.form-control, #srch-zip {
 	padding-left:|INDENT| /* INDENT */;	}
 	
 #side_nav .panel-body .nav>li>a:focus {
-	background:|COLOR5| /* COLOR5 */;
+	background:#FFF;
 }
 
 /* Carousel */
@@ -184,7 +189,7 @@ ul.retailers_list li a  {
 /* Offer Tables */
 
 #offer_table thead>tr>th {
-	border-color:|COLOR4| /* COLOR4 */;	
+	border-color:#DDDDDD;	
 	border-width:|BORDERWIDTH2| /* BORDERWIDTH2 */;
 }
 
@@ -193,12 +198,8 @@ ul.retailers_list li a  {
 }
 
 #offer_table td a, #offer_table th a {
-	color:|COLOR2| /* COLOR2 */;
+	color:|COLOR1| /* COLOR1 */;
 	font-weight:|FONTWEIGHT2| /* FONTWEIGHT2 */;	
-}
-
-#offer_table tr td.currency p a span.glyphicon {
-	display:|OFFERARROW| /* OFFERARROW */;	
 }
 
 #offer_pagination a.showmore {
@@ -207,6 +208,11 @@ ul.retailers_list li a  {
 
 #offer_pagination .small a {
 	color:|COLOR4| /* COLOR4 */;	
+}
+
+#offer_pagination .glyphicon, #offer_pagination .glyphicon:hover {
+	background-color:|COLOR1| /* COLOR1 */;	
+	border-color:|COLOR1| /* COLOR1 */;
 }
 
 /* Earn Summary */
@@ -224,13 +230,13 @@ ul#summary_tabs, ul#summary_tabs li.active a {
 /* Footer */
 
 footer {
-	background:|COLOR6| /* COLOR6 */;
+	background:|COLOR2| /* COLOR2 */;
 }
 
 footer ul li a {
-	color:|COLOR5|/* COLOR5 */;	
+	color:|COLOR7|/* COLOR7 */;	
 }
 
 footer ul li.divider {
-	color:|COLOR1| /* COLOR1 */;
+	color:|COLOR6| /* COLOR6 */;
 }
