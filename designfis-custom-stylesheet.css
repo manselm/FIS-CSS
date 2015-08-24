@@ -37,17 +37,36 @@ h1 {
 	color:|COLOR1| /* COLOR1 */;
 }
 
+#avatar a.dropdown-toggle img {
+	display:none;;
+}
+
+#avatar a.dropdown-toggle:before {
+	content:"\e008";
+	font-family:"Glyphicons Halflings";	
+	line-height:1;
+	display:inline-block;
+	font-size:29px;
+}
+
 /* Buttons */
 
 .btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
 	background-color:|COLOR1| /* COLOR1 */;		
 	border-color:|COLOR1| /* COLOR1 */;
-	color:|COLOR7| /* COLOR7 */;
+	color:|COLOR5| /* COLOR5 */;
 }
 
-
-.see_details_text span.glyphicon {
+.see_details_text span.glyphicon,
+#offer_table tr td:last-child span.glyphicon {
 	display:|OFFERARROW| /* OFFERARROW */;	
+}
+
+#desktop_search .btn,
+#mobile_search .btn {
+	background-color:|COLOR2| /* COLOR2 */;	
+	border-color:|COLOR2| /* COLOR2 */;
+	color:|COLOR7| /* COLOR7 */;
 }
 
 .navbar-nav > li > a {
@@ -59,6 +78,17 @@ h1 {
 
 .navbar-nav.navbar-right > li > a {
 	color:|COLOR1| /* COLOR1 */;
+}
+
+#top_links .dropdown-menu>li>a:hover, #top_links .dropdown-menu>li>a:focus {
+	background-color:|COLOR1| /* COLOR1 */;	
+	color:|COLOR5| /* COLOR5 */;	
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus,
+#avatar .dropdown-menu>li>a:hover, #avatar .dropdown-menu>li>a:focus {
+	background-color:|COLOR2| /* COLOR2 */;
+	color:|COLOR7| /* COLOR7 */;	
 }
 
 /* Input Fields */
@@ -97,6 +127,39 @@ input.form-control, #srch-zip {
 #featured .panel-heading h5,
 #top_retailers .panel-heading h5 {
 	color:|COLOR2| /* COLOR2 */;	
+}
+
+/* Off Canvas */
+
+.navbar-toggle .icon-bar {
+	background-color:|COLOR2| /* COLOR2 */;
+}
+
+.offcanvas {
+	border-color:|COLOR6| /* COLOR6 */;	
+}
+
+.offcanvas .navmenu-brand {
+	color:|COLOR7| /* COLOR7 */;		
+}
+
+.offcanvas,
+.offcanvas .dropdown-menu  {
+	background-color:|COLOR2| /* COLOR2 */ !important;
+}
+
+.offcanvas .navmenu-nav>li>a,
+.offcanvas .navmenu-nav>li>a:hover,
+.offcanvas .navmenu-nav>li>a:focus,
+.offcanvas .navmenu-nav>li.open>a {
+	color:|COLOR7| /* COLOR7 */ !important;
+	background-color:|COLOR2| /* COLOR2 */ !important;
+	border-bottom:1px solid |COLOR6| /* COLOR6 */;
+}
+
+.navmenu-default .navmenu-nav>.dropdown>a .caret {
+	border-top-color:|COLOR7| /* COLOR2 */ !important;	
+	border-bottom-color:|COLOR7| /* COLOR2 */ !important;	
 }
 
 /* Left Nav */
@@ -156,15 +219,29 @@ label.css-label {
 
 /* Dropdown Default BG */
 
+#category_dropdown .btn {
+	background-color:|COLOR2| /* COLOR2 */;	
+	border-color:|COLOR2| /* COLOR2 */;
+	color:|COLOR7| /* COLOR7 */;
+}
+
+.selectboxit-default-arrow {
+	border-top:8px solid |COLOR7| /* COLOR7 */;
+}
+
 .selectboxit-btn {
-	background-color:|COLOR1| /* COLOR1 */;	
+	background-color:|COLOR2| /* COLOR2 */;	
 }
 
 .selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor {
-	background-color:|COLOR1| /* COLOR1 */;	
+	background-color:|COLOR2| /* COLOR2 */;	
 }
 
 /* Dropdowns White BG */
+
+.selectboxit-container .selectboxit {
+	color:|COLOR7| /* COLOR7 */;
+}
 
 .selectboxit-container .selectboxit.white {
 	color:|COLOR1| /* COLOR1 */;
@@ -182,7 +259,7 @@ label.css-label {
 /* View All Retailers */
 
 ul.retailers_list li a  {
-	color:|COLOR4| /* COLOR2 */;
+	xcolor:|COLOR4| /* COLOR2 */;
 	font-weight:|FONTWEIGHT2| /* FONTWEIGHT2 */;	
 }
 
@@ -203,7 +280,8 @@ ul.retailers_list li a  {
 }
 
 #offer_pagination a.showmore {
-	background-color:|COLOR1| /* COLOR1 */;	
+	background-color:|COLOR1| /* COLOR1 */;
+	color:|COLOR5| /*COLOR5*/;	
 }
 
 #offer_pagination .small a {
@@ -211,8 +289,14 @@ ul.retailers_list li a  {
 }
 
 #offer_pagination .glyphicon, #offer_pagination .glyphicon:hover {
-	background-color:|COLOR1| /* COLOR1 */;	
+	background-color:|COLOR1| /* COLOR1 */ !important;	
 	border-color:|COLOR1| /* COLOR1 */;
+	color:|COLOR5| /* COLOR5 */;
+}
+
+#offer_pagination a,
+#offer_pagination a:hover {
+	color:|COLOR1| /* COLOR1 */;
 }
 
 /* Earn Summary */
@@ -233,10 +317,21 @@ footer {
 	background:|COLOR2| /* COLOR2 */;
 }
 
-footer ul li a {
+footer ul li a,
+footer ul li a:hover,
+footer ul li a:focus {
 	color:|COLOR7|/* COLOR7 */;	
 }
 
 footer ul li.divider {
 	color:|COLOR6| /* COLOR6 */;
+}
+
+@media (max-width: 767px) {
+	footer ul li a {
+		border-bottom:1px solid |COLOR6| /* COLOR6 */;	
+	}
+	footer #copyright {
+		color:|COLOR7|/* COLOR7 */;	
+	}
 }
