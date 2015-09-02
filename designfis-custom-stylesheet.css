@@ -116,6 +116,10 @@ input.form-control, #srch-zip {
 	font-weight:|FONTWEIGHT2| /* FONTWEIGHT2 */;	
 }
 
+.bx-wrapper .slide span.percent_amt {
+	height:30px;	
+}
+
 
 /* Panels */
 
@@ -342,6 +346,13 @@ footer ul li.divider {
 	.navbar-brand img {
 		max-height:53px;	
 	}
+}
+
+@media (min-width:769px) {
+	footer #footer-links {
+	border-bottom:1px solid |COLOR6| /* COLOR6 */;
+	margin-bottom:10px;	
+}	
 }
 
 @media (max-width: 767px) {
