@@ -30,7 +30,7 @@ body {
 }
 
 h1 {
-	font-size:|FONTSIZE2| /*FONTSIZE2*/;	
+	xfont-size:|FONTSIZE2| /*FONTSIZE2*/;	
 }
 
 * a, a:hover, a:focus, .btn-link {
@@ -47,6 +47,15 @@ h1 {
 	line-height:1;
 	display:inline-block;
 	font-size:29px;
+}
+
+.offcanvas.in {
+	z-index:999999;	
+}
+
+.canvas-slid .container,
+.canvas-slid {
+	z-index:1;	
 }
 
 /* Buttons */
@@ -66,7 +75,7 @@ h1 {
 #mobile_search .btn {
 	background-color:|COLOR2| /* COLOR2 */;	
 	border-color:|COLOR2| /* COLOR2 */;
-	color:|COLOR7| /* COLOR7 */;
+	color:|COLOR5| /* COLOR5 */;
 }
 
 .navbar-nav > li > a {
@@ -89,6 +98,14 @@ h1 {
 #avatar .dropdown-menu>li>a:hover, #avatar .dropdown-menu>li>a:focus {
 	background-color:|COLOR2| /* COLOR2 */;
 	color:|COLOR7| /* COLOR7 */;	
+}
+.slides-pagination a {
+	border-color:|COLOR1| /* COLOR1 */;
+}	
+
+.slides-pagination a.current {
+	background-color:|COLOR1| /* COLOR1 */;
+	border-color:|COLOR1| /* COLOR1 */;
 }
 
 /* Input Fields */
@@ -300,7 +317,7 @@ ul.retailers_list li a  {
 }
 
 #offer_pagination .small a {
-	color:|COLOR4| /* COLOR4 */;	
+	color:|COLOR1| /* COLOR1 */;	
 }
 
 #offer_pagination .glyphicon, #offer_pagination .glyphicon:hover {
